@@ -1,0 +1,75 @@
+@use "./src/variables/mixin.scss";
+
+.project_item_wrapper{
+  padding-block: 1rem;
+}
+
+.project_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .left {
+    width: 50%;
+    aspect-ratio: 4/3;
+    background: mixin.$green;
+    overflow: hidden;
+    flex: 1;
+    border-radius: mixin.$border_radius;
+    
+
+    img {
+        width: 100%;
+        mix-blend-mode: multiply;
+        filter: grayscale(100%);
+   
+        transform: translateY(0%);
+        border-radius: mixin.$border_radius;
+        &:hover {
+            mix-blend-mode: normal;
+            filter: grayscale(0);
+            animation:slide 7s ease-in-out;
+        }
+    } 
+
+  }
+
+  @keyframes slide {
+    0%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(-100%);
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+  }
+}
+
+.tech_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0px 10px;
+  list-style: none;
+  gap: 1em;
+  font-family: mixin.$font_mono;
+  white-space: nowrap;
+  font-size: mixin.$fz_sm;
+  color: mixin.$lighter_slate;
+}
+
+.img_box {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 10px 30px -15px mixin.$navy_shadow;
+  img {
+    width: 100%;
+  }
+}

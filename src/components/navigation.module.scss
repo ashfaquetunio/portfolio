@@ -1,0 +1,69 @@
+@use '/src/variables/mixin.scss' as mixin;
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 1rem;
+    min-height: mixin.$nav_height;
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    transition: mixin.$transition;
+    font-size: mixin.$fz_xs;
+    z-index: 100;
+    padding: 0 30px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+
+    li{
+        color: mixin.$white;
+        &::marker{
+            color: mixin.$green;
+        }
+    
+        &:last-child{
+            list-style: none;
+        }
+        &:hover{
+            color: mixin.$green;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .nav{
+        background-color: rgba(10, 25, 47, 0);
+        backdrop-filter: blur(0);
+    }
+    .navigation{
+        background-color: rgba(mixin.$light_navy, 0.95);
+        backdrop-filter: blur(50px);
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        flex-direction: column;
+        padding: 5rem;
+        list-style-position: inside;
+        gap: 2em;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 40px 0 0 40px;
+        transform: translateX(100%);
+    }
+}

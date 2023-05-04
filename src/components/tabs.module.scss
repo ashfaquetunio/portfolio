@@ -1,0 +1,29 @@
+@use './src/variables/mixin.scss' as mixin;
+
+.tabs{
+    list-style-type: none;
+    font-family: mixin.$font_mono;
+    font-size: mixin.$fz_xs;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+
+    button{
+        transition: mixin.$transition;
+        align-items: center;
+        height: mixin.$tab_height;
+        padding: 0px 20px 2px;
+        border-left: 2px solid mixin.$lighter_navy;
+        background-color: transparent;
+        color: mixin.$slate;
+        text-align: left;
+        white-space: nowrap;
+        transition: all 1s ease;
+
+        &.active{
+            background-color: mixin.$light_navy;
+            color: mixin.$green;
+            border-color: mixin.$green;
+        }
+    }
+}

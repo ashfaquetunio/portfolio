@@ -1,0 +1,7 @@
+@use "./src/variables/mixin.scss" as mixin;
+
+.work {
+    width: 70%;
+    margin: auto;
+    min-height: calc(100vh - mixin.$nav_height);
+  }
