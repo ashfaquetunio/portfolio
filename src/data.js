@@ -53,15 +53,15 @@ export const projects = [
   {
     id: 1,
     title: "ASIJO BALI",
-    img: "./src/assets/asijo_web.png",
+    img: "/assets/images/asijo_web.png",
     desc: "A travel agency website, created with beautiful components and sliders. The site is completely responsive and feels good to visit it.",
     techs: ["HTML", "CSS", "Javascript", "Bootstrap", "Jquery", "VS Code"],
-    link: "https://ashfaque-asijo.netlify.com"
+    link: "https://ashfaque-asijo.netlify.com",
   },
   // {
   //   id: 2,
   //   title: "Javatimes Caffe'",
-  //   img: "./src/assets/javatimes.png",
+  //   img: "/assets/images/javatimes.png",
   //   desc: "A travel agency website, created with beautiful components and sliders. The site is completely responsive and feels good to visit it.",
   //   techs: ["HTML", "CSS", "Reactjs", "Bootstrap", "Javascript", "VS Code"],
   //   link: "https://ashfaque-jtc.netlify.com"
@@ -69,62 +69,62 @@ export const projects = [
   {
     id: 3,
     title: "AIRBRICKS",
-    img: "./src/assets/airbrick.png",
+    img: "/assets/images/airbrick.png",
     desc: "A travel agency website, created with beautiful components and sliders. The site is completely responsive and feels good to visit it. A travel agency website, created with beautiful components and sliders. The site is completely responsive and feels good to visit it.",
     techs: ["HTML", "CSS", "Javascript", "Bootstrap", "Jquery", "VS Code"],
-    link: "https://ashfaque-airbrick.netlify.com"
+    link: "https://ashfaque-airbrick.netlify.com",
   },
   {
     id: 4,
     title: "GALAXY SKYVERSE",
-    img: "./src/assets/galaxy_skyverse.png",
+    img: "/assets/images/galaxy_skyverse.png",
     desc: "A travel agency website, created with beautiful components and sliders. The site is completely responsive and feels good to visit it. A travel agency website, created with beautiful components and sliders. The site is completely responsive and feels good to visit it.",
     techs: ["HTML", "CSS", "Javascript", "Bootstrap", "Jquery", "VS Code"],
-    link: "https://ashfaque-galaxy.netlify.com"
+    link: "https://ashfaque-galaxy.netlify.com",
   },
   {
     id: 5,
     title: "Arabia Ways",
-    img: "./src/assets/arabia_ways.png",
+    img: "/assets/images/arabia_ways.png",
     desc: "NFT Market Place, create with react, create multiple pages with unique styles and components",
     techs: ["HTML", "CSS", "Javascript", "Bootstrap", "React", "VS Code"],
-    link: "https://ashfaque-arabiaways.netlify.com"
+    link: "https://ashfaque-arabiaways.netlify.com",
   },
   {
     id: 6,
     title: "JTC Ecommerce",
-    img: "./src/assets/jtc_ecommerce.png",
+    img: "/assets/images/jtc_ecommerce.png",
     desc: "Coffee Store Website for Javatimes Caffe'. Beautifully crafted menu, and more.",
     techs: ["HTML", "CSS", "Javascript", "Bootstrap", "jquery", "VS Code"],
-    link:"https://ashfaque-jtcecommerce.netlify.com"
+    link: "https://ashfaque-jtcecommerce.netlify.com",
   },
   {
     id: 7,
     title: "Tradepedia",
-    img: "./src/assets/tradepedia.png",
+    img: "/assets/images/tradepedia.png",
     desc: "Take your trading game to the next level with Tradepedia trading experts. An ultimate trading  platform website created by me.",
     techs: ["HTML", "CSS", "Jazvascript", "Bootstrap", "React", "VS Code"],
-    link: "https://ashfaque-tradepedia.netlify.com"
+    link: "https://ashfaque-tradepedia.netlify.com",
   },
   // {
   //   id: 8,
   //   title: "JTC Investors Pitch",
-  //   img: "./src/assets/jtc_pitch.png",
+  //   img: "/assets/images/jtc_pitch.png",
   //   desc: "Take your trading game to the next level with Tradepedia trading experts. An ultimate trading  platform website created by me.",
   //   techs: ["HTML", "CSS", "Javascript", "Bootstrap", "React", "VS Code"],
   // },
   {
     id: 9,
     title: "The High Club",
-    img: "./src/assets/thc.png",
+    img: "/assets/images/thc.png",
     desc: "Take your trading game to the next level with Tradepedia trading experts. An ultimate trading  platform website created by me.",
     techs: ["HTML", "CSS", "Javascript", "Bootstrap", "React", "VS Code"],
-    link: "https://ashfaque-thc.netlify.com"
+    link: "https://ashfaque-thc.netlify.com",
   },
   // {
   //   id: 10,
   //   title: "Bimex Exchange",
-  //   img: "./src/assets/bimex.png",
+  //   img: "/assets/images/bimex.png",
   //   desc: "Take your trading game to the next level with Tradepedia trading experts. An ultimate trading  platform website created by me.",
   //   techs: ["HTML", "CSS", "Javascript", "Bootstrap", "React", "VS Code"],
   // },

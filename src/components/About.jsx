@@ -15,7 +15,7 @@ const About = () => {
               <div className={styles.profile}>
                 <div className="square_img">
                   <img
-                    src="./src/assets/profile-center.jpg"
+                    src="assets/images/profile-center.jpg"
                     loading="lazy"
                     alt=""
                   />

@@ -1,15 +1,13 @@
 @use "./src/variables/mixin.scss" as mixin;
 .project_box {
   text-align: start;
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
-  display: flex;
+  box-shadow: 0 0px 0px 2px #233554;  display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem 1.75rem;
   height: 100%;
   border-radius: mixin.$border_radius;
-  background-color: mixin.$lighter_navy;
   transition: mixin.$transition;
   transition: transform 0.2s linear;
 

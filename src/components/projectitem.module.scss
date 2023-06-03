@@ -53,17 +53,6 @@
   }
 }
 
-.tech_list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 25px 0px 10px;
-  list-style: none;
-  gap: 1em;
-  font-family: mixin.$font_mono;
-  white-space: nowrap;
-  font-size: mixin.$fz_sm;
-  color: mixin.$lighter_slate;
-}
 
 .img_box {
   overflow: hidden;

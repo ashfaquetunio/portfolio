@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./landing.module.scss";
 import AnimatedTitle from "./AnimatedTitle";
 import EarthCanvas from "./canvas/Earth";
+import StarsCanvas from "./canvas/Stars";
 
 const Landing = () => {
   return (

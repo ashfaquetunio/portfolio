@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./navigation.module.scss";
-import resume from "/src/assets/resume.pdf";
 import { Link, useLocation } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import resume from "/src/assets/resume.pdf";
 
 const Navigation = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
@@ -14,8 +20,11 @@ const Navigation = () => {
             <img src="/logo.png" className="icon" loading="lazy" alt="logo" />
           </Link>
         </div>
-        <ol start={0} className={styles.navigation}>
-          {location.pathname == "/" && (
+        <ol
+          start={0}
+          className={`${styles.navigation} ${isMenuOpen ? "open" : ""}`}
+        >
+          {location.pathname === "/" && (
             <>
               <li>
                 <a href="#about">&nbsp;About</a>
@@ -32,11 +41,17 @@ const Navigation = () => {
             </>
           )}
           <li>
-            <a href={resume} target="_blank" className="button compress">
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button compress"
+            >
               Resume
             </a>
           </li>
         </ol>
+        <FaBars className="icon" onClick={handleMenuToggle} />
       </nav>
     </>
   );

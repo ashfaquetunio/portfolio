@@ -10,6 +10,7 @@ import {
   Social,
 } from "../components";
 import styles from "./home.module.scss";
+import StarsCanvas from "../components/canvas/Stars";
 
 const Home = () => {
   return (
@@ -17,12 +18,18 @@ const Home = () => {
       <Social />
       <div className={styles.home}>
         <Navigation />
-        <Landing />
+        <div style={{ position: "relative", zIndex: 0 }}>
+          <Landing />
+          <StarsCanvas />
+        </div>
         <About />
         <Experience />
         <Work />
         <ProjectGrid />
-        <Contact />
+        <div style={{ position: "relative", zIndex: 0 }}>
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
     </>
   );

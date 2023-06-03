@@ -140,7 +140,7 @@ select {
 .title {
   color: mixin.$lighter_slate;
   font-weight: 700;
-  white-space: pre-line;
+  white-space: pre;
   font-size: clamp(30px, 6vw, 50px);
   line-height: 1.2;
 }
@@ -241,7 +241,7 @@ select {
 // components
 .button {
   border: mixin.$outline;
-  padding: 1em 1.5em;
+  padding: .75em 1.5em;
   border-radius: mixin.$border_radius;
   color: mixin.$primary;
   display: inline-block;
@@ -252,20 +252,19 @@ select {
   }
 
   &.compress {
-    padding-block: 0.5em;
+    padding-block: 0.3em;
   }
 
 }
 
 // containers
 .box{
-  box-shadow: 0 10px 30px -15px mixin.$navy_shadow;
+  box-shadow: 0 0px 0px 2px #233554;;
   transition: mixin.$transition;
   position: relative;
   z-index: 2;
   padding: 25px;
   border-radius: mixin.$border_radius;
-  background-color: mixin.$lighter_navy;
   color: mixin.$white;
   margin-block: 1em;
   font-size: mixin.$fz_sm;

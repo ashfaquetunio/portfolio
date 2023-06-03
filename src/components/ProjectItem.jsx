@@ -24,20 +24,9 @@ const ProjectItem = ({ data, reverse }) => {
               <a href="#" className="link_title">
                 {title}
               </a>
-              <div className="box ">
-                <p className="para" style={reverse && { textAlign: "start" }}>
-                  {desc}
-                </p>
+              <div className="box">
+                <p className="para">{desc}</p>
               </div>
-              <ul className={styles.tech_list}>
-                {techs.map((tech) => {
-                  return (
-                    <>
-                      <li>{tech}</li>
-                    </>
-                  );
-                })}
-              </ul>
             </div>
           </article>
         </div>
