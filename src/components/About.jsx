@@ -11,6 +11,19 @@ const About = () => {
             <div className="line_x"></div>
           </div>
           <div className={styles.layout}>
+            <div className="">
+              <div className={styles.profile}>
+                <div className="square_img">
+                  <img
+                    src="./src/assets/profile-center.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div className="img_outline"></div>
+                  <div className="color_filter"></div>
+                </div>
+              </div>
+            </div>
             <div>
               <p className="para">
                 Hello! My name is Ashfaque and I enjoy creating things that live
@@ -34,19 +47,6 @@ const About = () => {
                 <li>VS Code</li>
                 <li>Chart.js</li>
               </ul>
-            </div>
-            <div className="">
-              <div className={styles.profile}>
-                <div className="square_img">
-                  <img
-                    src="./src/assets/profile-center.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                  <div className="img_outline"></div>
-                  <div className="color_filter"></div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

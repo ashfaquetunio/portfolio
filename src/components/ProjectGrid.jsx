@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import ProjectBox from "./ProjectBox";
 import styles from "./projectgrid.module.scss";
 import { others } from "../data";
+import { Tilt } from "react-tilt";
 
 const ProjectGrid = () => {
-    const [count, setCount] = useState(6)
+  const [count, setCount] = useState(6);
 
-    const handleCount  = () => {
-        if(count === 6){
-            setCount(others.length)
-        } else{
-            setCount(6)
-        }
+  const handleCount = () => {
+    if (count === 6) {
+      setCount(others.length);
+    } else {
+      setCount(6);
     }
+  };
   return (
     <>
       <section className={styles.project_grid}>
@@ -22,13 +23,15 @@ const ProjectGrid = () => {
           {others.slice(0, count).map((other) => {
             return (
               <>
-                <ProjectBox data={other}/>
+                <Tilt>
+                  <ProjectBox data={other} />
+                </Tilt>
               </>
             );
           })}
         </div>
         <button className="button" onClick={handleCount}>
-            {count === 6? 'Show More': 'Show Less'}
+          {count === 6 ? "Show More" : "Show Less"}
         </button>
       </section>
     </>

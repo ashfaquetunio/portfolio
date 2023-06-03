@@ -22,8 +22,8 @@
 
         &.active{
             background-color: mixin.$light_navy;
-            color: mixin.$green;
-            border-color: mixin.$green;
+            color: mixin.$primary;
+            border-color: mixin.$primary;
         }
     }
 }

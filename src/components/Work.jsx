@@ -4,7 +4,7 @@ import styles from "./work.module.scss";
 import { projects } from "../data";
 import Slider from "react-slick";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import {BsChevronDown} from 'react-icons/bs'
+import { BsChevronDown } from "react-icons/bs";
 
 const Work = () => {
   const settings = {
@@ -14,7 +14,7 @@ const Work = () => {
     infinite: true,
     initialSlide: 0,
     speed: 500,
-    autoplaySpeed:4000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     // cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
@@ -26,13 +26,6 @@ const Work = () => {
           <p className="section_title">Some Things I’ve Built</p>
           <Slider {...settings}>
             {projects.map((project) => {
-              if (project.id % 2 === 0) {
-                return (
-                  <>
-                    <ProjectItem data={project} reverse />
-                  </>
-                );
-              }
               return (
                 <>
                   <ProjectItem data={project} />

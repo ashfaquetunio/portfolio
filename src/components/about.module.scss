@@ -1,6 +1,6 @@
 @use "./src/variables/mixin.scss" as mixin;
 .about {
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -11,10 +11,11 @@
   display: flex;
   gap: 50px;
   div:first-child{
-    flex: 5;
+    flex: 1;
   }
   div:last-child{
-    flex: 3;
+    flex: 1;
+    padding-inline: 7.5%;
   }
 }
 
@@ -36,7 +37,7 @@
       content: "▹";
       position: absolute;
       left: 0px;
-      color: mixin.$green;
+      color: mixin.$primary;
       font-size: mixin.$fz_sm;
       line-height: 12px;
     }

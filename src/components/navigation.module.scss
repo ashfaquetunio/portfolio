@@ -30,14 +30,14 @@
     li{
         color: mixin.$white;
         &::marker{
-            color: mixin.$green;
+            color: mixin.$primary;
         }
     
         &:last-child{
             list-style: none;
         }
         &:hover{
-            color: mixin.$green;
+            color: mixin.$primary;
         }
     }
 }

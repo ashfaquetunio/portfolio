@@ -56,7 +56,7 @@ select {
 .icon {
   width: 35px;
   font-size: 35PX;
-  color: mixin.$green;
+  color: mixin.$primary;
 }
 
 .link_icon{
@@ -64,7 +64,7 @@ select {
   font-size: 20px;
   transition: transform 0.2s linear;
   &:hover{
-    color: mixin.$green;
+    color: mixin.$primary;
     transform: translateY(-20%);
   }
 }
@@ -97,6 +97,7 @@ select {
   font-family: mixin.$font_sans;
   line-height: 1.8;
   letter-spacing: 1px;
+  padding-block: 5px
 }
 
 .mono_para {
@@ -112,12 +113,12 @@ select {
 }
 
 .green {
-  color: mixin.$green;
+  color: mixin.$primary;
 
 }
 
 .shrink{
-    width: 60%;
+    width: 75%;
 }
 
 .white{
@@ -137,11 +138,11 @@ select {
 }
 
 .title {
-  font-size: clamp(30px, 6vw, 65px);
   color: mixin.$lighter_slate;
-  line-height: 1.4;
   font-weight: 700;
-  
+  white-space: pre-line;
+  font-size: clamp(30px, 6vw, 50px);
+  line-height: 1.2;
 }
 
 .slate_title {
@@ -164,7 +165,7 @@ select {
     content: "0" counter(section_count) ".";
     counter-increment: section_count 1;
     margin-right: 10px;
-    color: mixin.$green;
+    color: mixin.$primary;
     font-family: mixin.$font_mono;
     font-size: clamp(mixin.$fz_md, 3vw, mixin.$fz_xl);
     font-weight: 400;
@@ -208,7 +209,7 @@ select {
     top: 0;
     width: 100%;
     aspect-ratio: 1;
-    background-color: mixin.$green;
+    background-color: mixin.$primary;
     z-index: 2;
     border-radius: mixin.$border_radius;
     opacity: 1;
@@ -216,7 +217,7 @@ select {
   .img_outline {
     position: absolute;
     border-radius: mixin.$border_radius;
-    border: 2px solid mixin.$green;
+    border: 2px solid mixin.$primary;
     width: 100%;
     aspect-ratio: 1;
     left: 8%;
@@ -242,11 +243,12 @@ select {
   border: mixin.$outline;
   padding: 1em 1.5em;
   border-radius: mixin.$border_radius;
-  color: mixin.$green;
+  color: mixin.$primary;
   display: inline-block;
+  margin-block: 5px;
 
   &:hover {
-    background-color: mixin.$green_tint;
+    background-color: mixin.$primary_tint;
   }
 
   &.compress {
@@ -269,9 +271,6 @@ select {
   font-size: mixin.$fz_sm;
   text-align: end;
 
-  &.cut{
-    width: 115%;
-  }
 }
 
 // -------------------------------------------------------------------------------------------

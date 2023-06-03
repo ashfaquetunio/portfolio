@@ -1,11 +1,12 @@
 @use './src/variables/mixin.scss' as mixin;
 
 .experience{
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     min-height: calc(100vh - mixin.$nav_height);   
+    padding-top: 3rem;
 }
 
 .layout{

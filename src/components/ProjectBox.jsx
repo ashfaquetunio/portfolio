@@ -18,7 +18,7 @@ const ProjectBox = ({ data }) => {
             </a>
           </div>
           <div className={styles.body}>
-            <p className="para bold green">{title}</p>
+            <p className="para green">{title}</p>
             <p className={styles.desc}>{desc}</p>
           </div>
           <ul className={styles.tech_list}>

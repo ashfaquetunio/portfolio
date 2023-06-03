@@ -19,8 +19,8 @@ $slate: #8892b0;
 $light_slate: #a8b2d1;
 $lighter_slate: #ccd6f6;
 $white: #e6f1ff;
-$green: #64ffda;
-$green_tint: rgba(100, 255, 218, 0.1);
+$primary: #64ffda;
+$primary_tint: rgba(100, 255, 218, 0.1);
 $pink: #f57dff;
 $blue: #57cbff;
 $font_sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
@@ -48,4 +48,4 @@ $ham_after: bottom 0.1s ease-in 0.25s,
   transform 0.22scubic-bezier(0.55, 0.055, 0.675, 0.19);
 $ham_after_active: bottom 0.1s ease-out,
   transform 0.22scubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-$outline: 1px solid $green;
+$outline: 1px solid $primary;

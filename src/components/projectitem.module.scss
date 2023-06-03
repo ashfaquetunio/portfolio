@@ -9,11 +9,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-inline: 10px;
 
   .left {
     width: 50%;
     aspect-ratio: 4/3;
-    background: mixin.$green;
+    background: mixin.$primary;
     overflow: hidden;
     flex: 1;
     border-radius: mixin.$border_radius;
@@ -71,5 +72,14 @@
   box-shadow: 0 10px 30px -15px mixin.$navy_shadow;
   img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .project_item{
+    flex-direction: column;
+    .left{
+      width: 100%;
+    }
   }
 }
