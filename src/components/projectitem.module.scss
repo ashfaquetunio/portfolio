@@ -1,7 +1,7 @@
 @use "./src/variables/mixin.scss";
 
 .project_item_wrapper{
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 
 .project_item {
@@ -23,12 +23,12 @@
     img {
         width: 100%;
         mix-blend-mode: multiply;
-        filter: grayscale(100%);   
+        filter: grayscale(100%) brightness(90%);   
         transform: translateY(0%);
         border-radius: mixin.$border_radius;
         &:hover {
             mix-blend-mode: normal;
-            filter: grayscale(0) brightness(90%);
+            filter: grayscale(0);
             animation: slide 10s ease-in-out forwards;
         }
     } 
@@ -82,9 +82,8 @@
 
 @media screen and (max-width: 1140px) {
   .project_item{
-    flex-direction: column;
     .left{
-      width: 100%;
+      display: none;
     }
   }
 }

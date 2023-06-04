@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./projectitem.module.scss";
 import { AiFillHeart } from "react-icons/ai";
 
-const ProjectItem = ({ data, reverse }) => {
+const ProjectItem = ({ data, reverse = false }) => {
   const { img, title, desc, techs } = data;
   return (
     <>
@@ -10,11 +10,11 @@ const ProjectItem = ({ data, reverse }) => {
         <div className={styles.project_item_wrapper}>
           <article
             className={styles.project_item}
-            style={reverse && { flexDirection: "row-reverse" }}
+            style={reverse ? { flexDirection: "row-reverse" } : {}}
           >
             <div
               className={styles.right}
-              style={reverse && { alignItems: "flex-start" }}
+              style={reverse ? { alignItems: "flex-start" } : {}}
             >
               <p className="green mono_para">Featured Project</p>
               <a href="#" className="link_title">
