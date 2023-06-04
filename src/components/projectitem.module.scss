@@ -23,13 +23,12 @@
     img {
         width: 100%;
         mix-blend-mode: multiply;
-        filter: grayscale(100%);
-   
+        filter: grayscale(100%);   
         transform: translateY(0%);
         border-radius: mixin.$border_radius;
         &:hover {
             mix-blend-mode: normal;
-            filter: grayscale(0);
+            filter: grayscale(0) brightness(90%);
             animation: slide 10s ease-in-out forwards;
         }
     } 
