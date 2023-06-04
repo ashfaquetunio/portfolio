@@ -71,6 +71,7 @@
     height: 100%;
     place-content: center;
     display: none;
+    border-radius: mixin.$border_radius_lg;
   }
 
   &:hover{
