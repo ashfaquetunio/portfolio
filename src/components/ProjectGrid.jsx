@@ -5,13 +5,13 @@ import { others } from "../data";
 import { Tilt } from "react-tilt";
 
 const ProjectGrid = () => {
-  const [count, setCount] = useState(6);
+  const [count, setCount] = useState(3);
 
   const handleCount = () => {
-    if (count === 6) {
+    if (count === 3) {
       setCount(others.length);
     } else {
-      setCount(6);
+      setCount(3);
     }
   };
   return (
@@ -31,7 +31,7 @@ const ProjectGrid = () => {
           })}
         </div>
         <button className="button" onClick={handleCount}>
-          {count === 6 ? "Show More" : "Show Less"}
+          {count === 3 ? "Show More" : "Show Less"}
         </button>
       </section>
     </>
