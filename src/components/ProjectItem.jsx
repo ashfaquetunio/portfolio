@@ -20,9 +20,12 @@ const ProjectItem = ({ data, reverse = false }) => {
               <a href="#" className="link_title">
                 {title}
               </a>
-              <div className="box">
-                <p className="para">{desc}</p>
-              </div>
+              <p
+                className="para"
+                style={{ textAlign: reverse ? "start" : "end" }}
+              >
+                {desc}
+              </p>
             </div>
             <div className={styles.left}>
               <div className={styles.img_box}>

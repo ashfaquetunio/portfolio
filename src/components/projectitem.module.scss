@@ -1,7 +1,17 @@
 @use "./src/variables/mixin.scss";
 
 .project_item_wrapper{
-  padding-block: 2rem;
+  margin-block: 3rem;
+  padding: 1rem;
+  background-color: mixin.$navy;
+  border-radius: mixin.$border_radius_lg;
+  border: 2px solid mixin.$navy;
+  transition: all .5s ease;
+
+  &:hover{
+    border-color: mixin.$dark_slate;
+    background-color: mixin.$light_navy;
+  }
 }
 
 .project_item {
@@ -9,26 +19,26 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding-inline: 10px;
 
   .left {
-    width: 50%;
+    width: 30%;
+    margin-inline: 1rem;
     aspect-ratio: 4/3;
     background: mixin.$primary;
     overflow: hidden;
-    flex: 1;
     border-radius: mixin.$border_radius_lg;
 
 
     img {
         width: 100%;
         mix-blend-mode: multiply;
-        filter: grayscale(100%) brightness(90%);   
+        filter: grayscale(100%);   
         transform: translateY(0%);
+        transition: transform 1s ease;
         &:hover {
             mix-blend-mode: normal;
-            filter: grayscale(0);
-            animation: slide 10s ease-in-out forwards;
+            filter: grayscale(0) brightness(85%);
+            animation: slide 15s ease forwards;
         }
     } 
 
