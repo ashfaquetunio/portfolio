@@ -61,6 +61,7 @@
   box-shadow: 0 10px 30px -15px mixin.$navy_shadow;
   img {
     width: 100%;
+    border: mixin.$border_radius_lg;
   }
   
   .thanks{
