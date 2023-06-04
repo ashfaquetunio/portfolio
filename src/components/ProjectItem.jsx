@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./projectitem.module.scss";
+import { AiFillHeart } from "react-icons/ai";
 
 const ProjectItem = ({ data, reverse }) => {
   const { img, title, desc, techs } = data;
@@ -11,11 +12,6 @@ const ProjectItem = ({ data, reverse }) => {
             className={styles.project_item}
             style={reverse && { flexDirection: "row-reverse" }}
           >
-            <div className={styles.left}>
-              <div className={styles.img_box}>
-                <img src={img} loading="lazy" alt="Asijo Bali Project Photo" />
-              </div>
-            </div>
             <div
               className={styles.right}
               style={reverse && { alignItems: "flex-start" }}
@@ -26,6 +22,14 @@ const ProjectItem = ({ data, reverse }) => {
               </a>
               <div className="box">
                 <p className="para">{desc}</p>
+              </div>
+            </div>
+            <div className={styles.left}>
+              <div className={styles.img_box}>
+                <p className={styles.thanks}>
+                  <AiFillHeart />
+                </p>
+                <img src={img} loading="lazy" alt="Asijo Bali Project Photo" />
               </div>
             </div>
           </article>
