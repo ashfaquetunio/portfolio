@@ -22,10 +22,22 @@ const Home = () => {
           <Landing />
           <StarsCanvas />
         </div>
-        <About />
-        <Experience />
-        <Work />
-        <ProjectGrid />
+        <div style={{ position: "relative", zIndex: 0 }}>
+          <About />
+          <StarsCanvas />
+        </div>
+        <div style={{ position: "relative", zIndex: 0 }}>
+          <Experience />
+          <StarsCanvas />
+        </div>
+        <div style={{ position: "relative", zIndex: 0 }}>
+          <Work />
+          <StarsCanvas />
+        </div>
+        <div style={{ position: "relative", zIndex: 0 }}>
+          <ProjectGrid />
+          <StarsCanvas />
+        </div>
         <div style={{ position: "relative", zIndex: 0 }}>
           <Contact />
           <StarsCanvas />
