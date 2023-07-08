@@ -11,14 +11,14 @@ const Navigation = () => {
           <img src="/logo.png" className="icon" loading="lazy" alt="logo" />
         </Link>
 
-        <Link
+        <a
           href={resume}
           target="_blank"
           rel="noopener noreferrer"
           className="button compress"
         >
           Resume
-        </Link>
+        </a>
       </nav>
     </>
   );

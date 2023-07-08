@@ -26,6 +26,29 @@ body {
   counter-reset: section_count;
 }
 
+.cursor {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  background-color: red;
+  width: 0px;
+  height: 0px;
+  box-shadow: 0 0 1080px 110px rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+
+
+}
+
+.cursor-outline {
+  position: fixed;
+  z-index: 9998;
+  pointer-events: none;
+  background-color: green;
+    transform: translate(-50%, -50%);
+
+}
+
+
 ::-webkit-scrollbar{
     background: mixin.$navy;
 }

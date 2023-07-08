@@ -1,6 +1,7 @@
 import { Article, Home } from "./pages";
 import { Route, Routes, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Cursor from "./components/Cursor";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <Cursor />
       {isLoading && (
         <>
           <div className="loader">
