@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Cursor />
+      {/* <Cursor /> */}
       {isLoading && (
         <>
           <div className="loader">
