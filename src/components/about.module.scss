@@ -1,0 +1,61 @@
+@use "./src/variables/mixin.scss" as mixin;
+.about {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - mixin.$nav_height);
+}
+
+.layout {
+  display: flex;
+  gap: 50px;
+  div:first-child{
+    flex: 1;
+  }
+  div:last-child{
+    flex: 1;
+    padding-inline: 7.5%;
+  }
+}
+
+.skill_set {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: mixin.$font_mono;
+    font-size: mixin.$fz_xs;
+    &::before {
+      content: "▹";
+      position: absolute;
+      left: 0px;
+      color: mixin.$primary;
+      font-size: mixin.$fz_sm;
+      line-height: 12px;
+    }
+  }
+}
+
+
+// responsive
+@media screen and (max-width: 768px) {
+  
+  .layout {
+    flex-direction: column-reverse;
+    gap: 5rem;
+    div:first-child{
+      flex: auto;
+    }
+    div:last-child{
+      flex: auto;
+    }
+  }
+}

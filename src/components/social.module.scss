@@ -1,0 +1,29 @@
+@use './src/variables/mixin.scss' as mixin;
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    position: fixed;
+    left: 3%;
+    bottom: 0;
+    z-index: 20;
+    &::after{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: mixin.$lighter_slate
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1140px) {
+    .social{
+        display: none;
+    }
+  }

@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.86.0",
+    "@react-three/fiber": "^8.14.3",
+    "@types/node": "20.7.1",
+    "@types/react": "18.2.23",
+    "@types/react-dom": "18.2.8",
+    "eslint": "8.50.0",
+    "eslint-config-next": "13.5.3",
+    "framer-motion": "^10.16.4",
+    "next": "13.5.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-tilt": "^1.0.2",
+    "sass": "^1.68.0",
+    "three": "^0.157.0",
+    "typescript": "5.2.2"
+  }
+}

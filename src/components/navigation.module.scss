@@ -1,0 +1,52 @@
+@use '/src/variables/mixin.scss' as mixin;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 1rem;
+  min-height: mixin.$nav_height;
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  transition: mixin.$transition;
+  font-size: mixin.$fz_xs;
+  z-index: 100;
+  padding: 0 30px;
+
+  .icon {
+    display: none; /* Hide the logo icon on larger screens */
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 15px; /* Adjust the padding for smaller screens */
+
+    .icon {
+      display: block; /* Show the logo icon on smaller screens */
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+
+  li {
+    color: mixin.$white;
+    &:hover {
+      color: mixin.$primary;
+    }
+  }
+}
