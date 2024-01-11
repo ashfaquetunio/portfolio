@@ -12,5 +12,5 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
+   git clone https://github.com/ashfaquetunio/portfolio.git
+   cd portfolio
